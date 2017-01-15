@@ -1,5 +1,6 @@
-# On This Day
+# On This Day Scraper
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Code Climate](https://codeclimate.com/github/sasalatart/on-this-day-scraper/badges/gpa.svg)](https://codeclimate.com/github/sasalatart/on-this-day-scraper)
 
 ## About
@@ -10,7 +11,7 @@
 
 1. Run `bundle install` in order to install ruby dependencies.
 
-2. Run `ruby scraper.rb` and follow the instructions.
+2. Run `ruby lib/scraper.rb` and follow the instructions.
 
 ## Contributing
 
