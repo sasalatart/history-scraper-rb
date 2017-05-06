@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'date'
 require 'json'
 
-def scrap
+def scrap_year(output_dir)
   result = {}
   (1..12).each do |month_index|
     (1..31).each do |day_index|
@@ -23,7 +23,7 @@ def scrap
     end
   end
 
-  export_to_file(result)
+  export_to_file(result, output_dir)
 end
 
 def form_date(day_index, month_index)
@@ -56,9 +56,7 @@ def parse_keywords(li)
   li.css('a').map { |a| { title: a['title'], href: a['href'] } }
 end
 
-def export_to_file(hash_data)
-  File.write('episodes.json', hash_data.to_json)
-  puts 'Results stored in episodes.json'
+def export_to_file(hash_data, dir)
+  File.write(dir, hash_data.to_json)
+  puts "Results stored in #{dir}"
 end
-
-scrap
