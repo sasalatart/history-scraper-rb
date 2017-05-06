@@ -1,7 +1,8 @@
 # On This Day Scraper
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Gem Version](https://badge.fury.io/rb/on_this_day_scraper.svg)](https://badge.fury.io/rb/on_this_day_scraper)
 [![Code Climate](https://codeclimate.com/github/sasalatart/on-this-day-scraper/badges/gpa.svg)](https://codeclimate.com/github/sasalatart/on-this-day-scraper)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## About
 
@@ -9,9 +10,17 @@
 
 ## Usage
 
-1. Run `bundle install` in order to install ruby dependencies.
+1. Add the gem `on_this_day_scraper` to your `Gemfile` (or run `gem install on_this_day_scraper`)
 
-2. Run `ruby lib/scraper.rb` and follow the instructions.
+2. Add this to your code:
+
+```ruby
+  require 'on_this_day_scraper'
+
+  scrap_year('dir/which/will/store/the/results.json')
+```
+
+3. Run your code **(The algorithm may take a while to finish)**.
 
 ## Contributing
 
