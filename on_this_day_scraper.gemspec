@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'on_this_day_scraper'
-  s.version     = '1.0.2'
+  s.version     = '1.0.3'
   s.date        = '2017-05-06'
   s.summary     = 'Wikipedia history scraper.'
   s.description = 'Scraps events, births and deaths that occured during any day of history'

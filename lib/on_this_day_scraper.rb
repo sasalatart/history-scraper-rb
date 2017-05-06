@@ -44,12 +44,14 @@ def extract_from(day, month)
   births = parse_ul html.css('#Births')[0].parent.next_element
   deaths = parse_ul html.css('#Deaths')[0].parent.next_element
 
-  [description, events, births, deaths]
+  [description, events.compact, births.compact, deaths.compact]
 end
 
 def parse_ul(ul)
   ul.css('li').map do |li|
     year, *text = li.text.split(' – ')
+
+    next unless year && !text.empty?
     { year: year, data: text.join(' – '), kw: parse_keywords(li) }
   end
 end
