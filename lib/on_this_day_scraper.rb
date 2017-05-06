@@ -26,6 +26,8 @@ def scrap_year(output_dir)
   export_to_file(result, output_dir)
 end
 
+private
+
 def form_date(day_index, month_index)
   date = Date._strptime("#{day_index}/#{month_index}", '%d/%m')
   [date[:mday], Date::MONTHNAMES[date[:mon]]]
