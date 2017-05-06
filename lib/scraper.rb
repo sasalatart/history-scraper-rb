@@ -48,8 +48,12 @@ end
 def parse_ul(ul)
   ul.css('li').map do |li|
     year, *text = li.text.split(' – ')
-    { year: year, data: text.join(' – ') }
+    { year: year, data: text.join(' – '), kw: parse_keywords(li) }
   end
+end
+
+def parse_keywords(li)
+  li.css('a').map { |a| { title: a['title'], href: a['href'] } }
 end
 
 def export_to_file(hash_data)
