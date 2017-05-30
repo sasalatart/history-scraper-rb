@@ -1,21 +1,23 @@
-# On This Day Scraper
+# History Scraper (Ruby)
 
-[![Gem Version](https://badge.fury.io/rb/on_this_day_scraper.svg)](https://badge.fury.io/rb/on_this_day_scraper)
-[![Code Climate](https://codeclimate.com/github/sasalatart/on-this-day-scraper/badges/gpa.svg)](https://codeclimate.com/github/sasalatart/on-this-day-scraper)
+[![Gem Version](https://badge.fury.io/rb/history_scraper.svg)](https://badge.fury.io/rb/history_scraper)
+[![Code Climate](https://codeclimate.com/github/sasalatart/history-scraper-rb/badges/gpa.svg)](https://codeclimate.com/github/sasalatart/history-scraper-rb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## About
 
-*On This Day* is a scraper that searches events, births and deaths that occurred in a specific day from Wikipedia.
+Scraper that searches for events, births and deaths that occurred during a specific day of history from Wikipedia.
+
+You may check out the js package version [here](https://github.com/sasalatart/history-scraper-js).
 
 ## Usage
 
-1. Add the gem `on_this_day_scraper` to your `Gemfile` (or run `gem install on_this_day_scraper`)
+1. Add the gem `history_scraper` to your `Gemfile` (or run `gem install history_scraper`)
 
 2. Add this to your code:
 
 ```ruby
-  require 'on_this_day_scraper'
+  require 'history_scraper'
 
   scrap_year('dir/which/will/store/the/results.json')
 ```
